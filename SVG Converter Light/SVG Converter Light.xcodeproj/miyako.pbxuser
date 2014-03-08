@@ -85,8 +85,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 406926187;
-			PBXWorkspaceStateSaveDate = 406926187;
+			PBXPerProjectTemplateStateSaveDate = 407064140;
+			PBXWorkspaceStateSaveDate = 407064140;
 		};
 		perUserProjectItems = {
 			D116200617F4BE0A00FCFE07 /* PBXTextBookmark */ = D116200617F4BE0A00FCFE07 /* PBXTextBookmark */;
@@ -112,8 +112,8 @@
 			D176035B17DEB4FF00BF5585 /* PBXTextBookmark */ = D176035B17DEB4FF00BF5585 /* PBXTextBookmark */;
 			D176039217DEBD4E00BF5585 /* PBXTextBookmark */ = D176039217DEBD4E00BF5585 /* PBXTextBookmark */;
 			D1766B6F184133CD00516909 /* PlistBookmark */ = D1766B6F184133CD00516909 /* PlistBookmark */;
-			D1766B70184133CD00516909 /* XCBuildMessageTextBookmark */ = D1766B70184133CD00516909 /* XCBuildMessageTextBookmark */;
 			D1766B71184133CD00516909 /* PBXTextBookmark */ = D1766B71184133CD00516909 /* PBXTextBookmark */;
+			D188722C18434E5200110758 /* PBXTextBookmark */ = D188722C18434E5200110758 /* PBXTextBookmark */;
 			D1D9AE9A18412E650051E259 /* PBXTextBookmark */ = D1D9AE9A18412E650051E259 /* PBXTextBookmark */;
 		};
 		sourceControlManager = D1286A7417DD4730002535D3 /* Source Control */;
@@ -318,9 +318,9 @@
 	};
 	D1286B3417DD5328002535D3 /* svg_image.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {754, 10127}}";
+			sepNavIntBoundsRect = "{{0, 0}, {794, 10101}}";
 			sepNavSelRange = "{10066, 0}";
-			sepNavVisRange = "{9975, 256}";
+			sepNavVisRange = "{9745, 660}";
 			sepNavWindowFrame = "{{254, 170}, {956, 708}}";
 		};
 	};
@@ -725,16 +725,7 @@
 		);
 		name = "/Users/miyako/Documents/4d-plugin-svg2pdf/SVG Converter Light/Info.plist";
 		rLen = 0;
-		rLoc = 9223372036854775807;
-	};
-	D1766B70184133CD00516909 /* XCBuildMessageTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "Comparison between signed and unsigned integer expressions";
-		fRef = D1286B3417DD5328002535D3 /* svg_image.c */;
-		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 1;
-		rLoc = 363;
-		rType = 1;
+		rLoc = 9223372036854775808;
 	};
 	D1766B71184133CD00516909 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -744,6 +735,16 @@
 		rLoc = 10066;
 		rType = 0;
 		vrLen = 680;
+		vrLoc = 9745;
+	};
+	D188722C18434E5200110758 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D1286B3417DD5328002535D3 /* svg_image.c */;
+		name = "svg_image.c: 364";
+		rLen = 0;
+		rLoc = 10066;
+		rType = 0;
+		vrLen = 660;
 		vrLoc = 9745;
 	};
 	D19CC17C1353782E0004336E /* C_TEXT.cpp */ = {
