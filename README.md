@@ -14,12 +14,12 @@ Commands
 
 ```c
 // --- Convert Many
-void SVGL_Convert_array(sLONG_PTR *pResult, PackagePtr pParams);
+SVGL_Convert_array
 
 // --- Convert One
-void SVGL_Convert(sLONG_PTR *pResult, PackagePtr pParams);
+SVGL_Convert
 
 // --- URL
-void URL_Convert_from_path(sLONG_PTR *pResult, PackagePtr pParams);
-void URL_Convert_to_path(sLONG_PTR *pResult, PackagePtr pParams);
+URL_Convert_from_path
+URL_Convert_to_path
 ```
