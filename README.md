@@ -1,7 +1,7 @@
 4d-plugin-svg-converter-light
 =============================
 
-4D implementation of the libsvg program. The output is PDF.
+4D implementation of the SVG2PDF program.
 
 ### Platform
 
