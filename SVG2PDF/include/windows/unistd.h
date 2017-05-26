@@ -1,119 +1,51 @@
-//<unistd.h> relacement for visual c++
-#ifndef _UNISTD_H_
-#define _UNISTD_H_
-#ifdef _WIN32
-#pragma once
+#ifndef _UNISTD_H
+#define _UNISTD_H    1
+
+/* This file intended to serve as a drop-in replacement for
+*  unistd.h on Windows
+*  Please add functionality as neeeded
+*/
 
 #include <io.h>
-/*
- access
- chmod
- chsize
- close
- creat
- dup
- dup2
- eof
- filelength
- isatty
- locking
- lseek
- mktemp
- open
- read
- setmode
- sopen
- tell
- umask
- unlink
- write
- */
-#include <direct.h>
-/*
- chdir
- getcwd
- mkdir
- rmdir
- */
-#include <process.h>
-/*
- cwait
- execl
- execle
- execlp
- execlpe
- execv
- execve
- execvp
- execvpe
- spawnl
- spawnle
- spawnlp
- spawnlpe
- spawnv
- spawnve
- spawnvp
- spawnvpe
- 
- */
-//#pragma comment( lib, "ws2_32" )
-//#include <winsock2.h>
-/*
- gethostname
- */
+//#include <getopt.h> /* getopt at: https://gist.github.com/ashelly/7776712 */
+#include <process.h> /* for getpid() and the exec..() family */
+#include <direct.h> /* for _getcwd() and _chdir() */
 
-//#include <process.h>
-/*
- _getpid
- */
-#include <time.h>
+#define srandom srand
+#define random rand
 
-#ifdef	__cplusplus
-extern "C" {
-#endif
-	
-	typedef int	pid_t;			/* process id type	*/
-/*	
-already defined in magick-base-config.h
-#ifndef _SSIZE_T_DEFINED
-	typedef int ssize_t;
-#define _SSIZE_T_DEFINED
-#endif
-*/
-#ifndef vsnprintf
-#define vsnprintf _vsnprintf
-#endif
-	
-#ifndef snprintf
-#define snprintf _snprintf
-#endif
-/*	
-#ifndef getpid
-#define  getpid() _getpid()
-	extern pid_t __cdecl _getpid(void);
-#endif
-*/	
-#define nice(incr) (SetPriorityClass(GetCurrentProcess(),incr))//TODO
-#define sleep(seconds) (Sleep(seconds*1000))
-#define usleep(useconds) (Sleep(useconds))
-/*	
-#define stime(tp) UNISTD_stime(tp)
-	__forceinline int UNISTD_stime(const time_t *tp ){
-		FILETIME ft;
-		SYSTEMTIME st;
-		LONGLONG ll = Int32x32To64(*tp, 10000000) + 116444736000000000;
-		ft.dwLowDateTime = (DWORD) ll;
-		ft.dwHighDateTime = (DWORD)ll >>32;
-		FileTimeToSystemTime(&ft,&st);
-		return SetSystemTime(&st);
-	}
-*/	
-	//<sys/stat.h>
-#define fstat64(fildes, stat) (_fstati64(fildes, stat))
-#define stat64(path, buffer) (_stati64(path,buffer))
-	
-#ifdef	__cplusplus
-}
-#endif
-#endif /* _WIN32 */
-#endif /* _UNISTD_H_ */
+/* Values for the second argument to access.
+ These may be OR'd together.  */
+#define R_OK    4       /* Test for read permission.  */
+#define W_OK    2       /* Test for write permission.  */
+//#define   X_OK    1       /* execute permission - unsupported in windows*/
+#define F_OK    0       /* Test for existence.  */
+
+#define access _access
+#define dup2 _dup2
+#define execve _execve
+#define ftruncate _chsize
+#define unlink _unlink
+#define fileno _fileno
+#define getcwd _getcwd
+#define chdir _chdir
+#define isatty _isatty
+#define lseek _lseek
+/* read, write, and close are NOT being #defined here, because while there are file handle specific versions for Windows, they probably don't work for sockets. You need to look at your app and consider whether to call e.g. closesocket(). */
+
+#define ssize_t int
+
+#define STDIN_FILENO 0
+#define STDOUT_FILENO 1
+#define STDERR_FILENO 2
+/* should be in some equivalent to <sys/types.h> */
+//typedef __int8            int8_t;
+typedef __int16           int16_t;
+typedef __int32           int32_t;
+typedef __int64           int64_t;
+typedef unsigned __int8   uint8_t;
+typedef unsigned __int16  uint16_t;
+typedef unsigned __int32  uint32_t;
+typedef unsigned __int64  uint64_t;
+
+#endif /* unistd.h  */

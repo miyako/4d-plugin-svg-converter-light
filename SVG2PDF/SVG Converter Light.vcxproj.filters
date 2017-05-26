@@ -72,6 +72,28 @@
     <ClCompile Include="4D Plugin API\Classes\ARRAY_TIME.cpp">
       <Filter>Source\4D Plugin API\Classes\ARRAY</Filter>
     </ClCompile>
+    <ClCompile Include="lib\libsvg\svg.c" />
+    <ClCompile Include="lib\libsvg\svg_ascii.c" />
+    <ClCompile Include="lib\libsvg\svg_attribute.c" />
+    <ClCompile Include="lib\libsvg\svg_color.c" />
+    <ClCompile Include="lib\libsvg\svg_element.c" />
+    <ClCompile Include="lib\libsvg\svg_gradient.c" />
+    <ClCompile Include="lib\libsvg\svg_group.c" />
+    <ClCompile Include="lib\libsvg\svg_hash.c" />
+    <ClCompile Include="lib\libsvg\svg_image.c" />
+    <ClCompile Include="lib\libsvg\svg_length.c" />
+    <ClCompile Include="lib\libsvg\svg_paint.c" />
+    <ClCompile Include="lib\libsvg\svg_parser.c" />
+    <ClCompile Include="lib\libsvg\svg_parser_libxml.c" />
+    <ClCompile Include="lib\libsvg\svg_path.c" />
+    <ClCompile Include="lib\libsvg\svg_pattern.c" />
+    <ClCompile Include="lib\libsvg\svg_str.c" />
+    <ClCompile Include="lib\libsvg\svg_style.c" />
+    <ClCompile Include="lib\libsvg\svg_text.c" />
+    <ClCompile Include="lib\libsvg\svg_transform.c" />
+    <ClCompile Include="lib\libsvg-cairo\svg_cairo.c" />
+    <ClCompile Include="lib\libsvg-cairo\svg_cairo_sprintf_alloc.c" />
+    <ClCompile Include="lib\libsvg-cairo\svg_cairo_state.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="4DPlugin.h">
@@ -140,6 +162,16 @@
     <ClInclude Include="4D Plugin API\Classes\ARRAY_TIME.h">
       <Filter>Source\4D Plugin API\Classes\ARRAY</Filter>
     </ClInclude>
+    <ClInclude Include="lib\libsvg\config.h" />
+    <ClInclude Include="lib\libsvg\svg.h" />
+    <ClInclude Include="lib\libsvg\svgint.h" />
+    <ClInclude Include="lib\libsvg\svg_ascii.h" />
+    <ClInclude Include="lib\libsvg\svg_hash.h" />
+    <ClInclude Include="lib\libsvg\svg_version.h" />
+    <ClInclude Include="lib\libsvg-cairo\config.h" />
+    <ClInclude Include="lib\libsvg-cairo\svg-cairo-internal.h" />
+    <ClInclude Include="lib\libsvg-cairo\svg-cairo-version.h" />
+    <ClInclude Include="lib\libsvg-cairo\svg-cairo.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="4D Plugin API\4DPluginAPI.def">
