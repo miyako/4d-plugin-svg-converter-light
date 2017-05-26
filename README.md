@@ -16,7 +16,7 @@
 ## Syntax
 
 ```
-error:=SVGL Convert (svg;image;format;keyNames;keyValues;color;basePath)
+error:=SVGL Convert (svg;image;width;height;scale)
 ```
 
 Parameter|Type|Description
@@ -29,7 +29,7 @@ scale|REAL|
 error|LONGINT|
 
 ```
-error:=SVGL Convert array (svg;image;format;keyNames;keyValues;color;basePath)
+error:=SVGL Convert array (svg;image;width;height;scale)
 ```
 
 Parameter|Type|Description
