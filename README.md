@@ -3,7 +3,7 @@
 
 4D implementation of the [SVG2PDF](https://github.com/db9052/pdf2svg) program.
 
-Includes 
+Powered by... 
 
 libcairo
 libfontconfig
