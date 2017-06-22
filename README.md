@@ -1,7 +1,21 @@
 4d-plugin-svg-converter-light
 =============================
 
-4D implementation of the SVG2PDF program.
+4D implementation of the [SVG2PDF](https://github.com/db9052/pdf2svg) program.
+
+Includes 
+
+libcairo
+libfontconfig
+libfreetype
+libiconv
+libjpeg
+libpixman
+libpng16
+libxml2
+libz
+
+Size is ``60.1 MB`` for 4 platforms. Not all SVG features are implemented (``mask``, for example).
 
 ### Platform
 
