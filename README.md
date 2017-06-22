@@ -17,6 +17,10 @@ libz
 
 Size is ``60.1 MB`` for 4 platforms. Not all SVG features are implemented (``mask``, for example).
 
+**Related Project**: https://github.com/miyako/4d-plugin-PDF2SVG
+
+**Related Project**: https://github.com/miyako/4d-plugin-svg-converter
+
 ### Platform
 
 | carbon | cocoa | win32 | win64 |
