@@ -1,0 +1,6 @@
+.DS_Store
+build/
+*.4dbase/Logs/
+*.4dbase/userPreferences.*/
+SVG Converter Light.4dbase/Plugins/SVG Converter Light.bundle/Contents/MacOS/SVG Converter Light
+SVG Converter Light.4dbase/Plugins/SVG Converter Light.bundle/Contents/_CodeSignature/
