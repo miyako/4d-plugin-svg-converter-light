@@ -24,7 +24,9 @@ Not every SVG feature is implemented (`mask`, for example, is not).
 - **Units.** One SVG user unit (pixel) becomes one PDF point (1/72 inch).
 - **Images inside the SVG.** `<image>` elements are drawn when they reference PNG or JPEG data, either inline (a base64 `data:` URI) or as a local file URL. Referenced files are read from disk with the rights of the 4D process, so think twice before converting SVG from untrusted sources.
 - **Windows binary.** Behaviour marked "since this version's review fixes" below reaches Windows only once `Windows64/SVG Converter Light.4DX` is rebuilt by the release workflow.
-- Bundled libraries: cairo, pixman, libpng, libjpeg, zlib, libxml2, freetype, fontconfig, harfbuzz, glib, libiconv, libintl (on Windows, the DLLs in `Contents/Windows64/`).
+- Bundled libraries:
+  - macOS: cairo 1.12.14, pixman, libpng and libjpeg are linked statically. Text is drawn with the fonts installed on the Mac (through Quartz). libxml2 and zlib are the system's. To build the plugin yourself, first run `scripts/build-macos-deps.sh`: it builds the four libraries into `a/` as universal (arm64 + x86_64) archives from pinned source releases. The release workflow runs it too and caches the result.
+  - Windows: the DLLs in `Contents/Windows64/` (cairo, pixman, libpng, libjpeg, zlib, libxml2, libiconv, freetype, fontconfig).
 
 ---
 

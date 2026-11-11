@@ -178,6 +178,32 @@ jobs:
         with:
           ref: ${{ needs.version.outputs.tag }}
 
+      # The static libraries the Xcode project links from a/ (cairo, pixman,
+      # libpng, libjpeg) are not committed: scripts/build-macos-deps.sh builds
+      # them universal from pinned, checksummed source releases (a few
+      # minutes). The result is cached under the script's hash and saved right
+      # after the build, so a later signing or notarization failure doesn't
+      # throw the build away.
+      - name: restore prebuilt libraries
+        id: deps-cache
+        uses: actions/cache/restore@v4
+        with:
+          path: a/*.a
+          key: macos-deps-${{ hashFiles('scripts/build-macos-deps.sh') }}
+
+      - name: build prebuilt libraries (cache miss)
+        if: steps.deps-cache.outputs.cache-hit != 'true'
+        env:
+          MACOSX_DEPLOYMENT_TARGET: ${{ env.MACOS_DEPLOYMENT_TARGET }}
+        run: scripts/build-macos-deps.sh a
+
+      - name: save prebuilt libraries
+        if: steps.deps-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: a/*.a
+          key: macos-deps-${{ hashFiles('scripts/build-macos-deps.sh') }}
+
       # Every library the Xcode project references must be present, and every
       # static or dynamic library the target links must carry arm64 + x86_64.
       # Paths are resolved through the project's group hierarchy, so a

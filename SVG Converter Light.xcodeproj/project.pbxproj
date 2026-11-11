@@ -54,18 +54,9 @@
 		D134D4AC1A030BA0008D14EF /* manifest.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = D134D4A91A030B06008D14EF /* manifest.json */; };
 		D175D9CD1A02E8DD0006B569 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D175D9CC1A02E8DD0006B569 /* CoreGraphics.framework */; };
 		D1D143701ED8B0CE00A005FB /* libcairo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D143671ED8B0CE00A005FB /* libcairo.a */; };
-		D1D143711ED8B0CE00A005FB /* libfontconfig.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D143681ED8B0CE00A005FB /* libfontconfig.a */; };
-		D1D143721ED8B0CE00A005FB /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D143691ED8B0CE00A005FB /* libfreetype.a */; };
-		D1D143731ED8B0CE00A005FB /* libiconv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D1436A1ED8B0CE00A005FB /* libiconv.a */; };
 		D1D143741ED8B0CE00A005FB /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D1436B1ED8B0CE00A005FB /* libjpeg.a */; };
 		D1D143751ED8B0CE00A005FB /* libpixman-1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D1436C1ED8B0CE00A005FB /* libpixman-1.a */; };
 		D1D143761ED8B0CE00A005FB /* libpng16.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D1436D1ED8B0CE00A005FB /* libpng16.a */; };
-		D1D143771ED8B0CE00A005FB /* libxml2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D1436E1ED8B0CE00A005FB /* libxml2.a */; };
-		D1D143781ED8B0CE00A005FB /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D1436F1ED8B0CE00A005FB /* libz.a */; };
-		D1D1437B1ED8B34C00A005FB /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D1437A1ED8B34C00A005FB /* libbz2.dylib */; };
-		D1D1437D1ED8B38600A005FB /* libharfbuzz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D1437C1ED8B38600A005FB /* libharfbuzz.a */; };
-		D1D1437F1ED8B40300A005FB /* libglib-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D1437E1ED8B40300A005FB /* libglib-2.0.a */; };
-		D1D143811ED8B41B00A005FB /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D143801ED8B41B00A005FB /* libintl.a */; };
 		D1D143A41ED8B49900A005FB /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = D1D143831ED8B49900A005FB /* config.h */; };
 		D1D143A51ED8B49900A005FB /* svg.c in Sources */ = {isa = PBXBuildFile; fileRef = D1D143841ED8B49900A005FB /* svg.c */; };
 		D1D143A61ED8B49900A005FB /* svg.h in Headers */ = {isa = PBXBuildFile; fileRef = D1D143851ED8B49900A005FB /* svg.h */; };
@@ -99,6 +90,8 @@
 		D1D143C21ED8B49900A005FB /* svg_cairo_sprintf_alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = D1D143A21ED8B49900A005FB /* svg_cairo_sprintf_alloc.c */; };
 		D1D143C31ED8B49900A005FB /* svg_cairo_state.c in Sources */ = {isa = PBXBuildFile; fileRef = D1D143A31ED8B49900A005FB /* svg_cairo_state.c */; };
 		8E7D1C6480BBF774E6270F0F /* constants.xlf in CopyFiles */ = {isa = PBXBuildFile; fileRef = D14D10DD1A03A8A5008B3411 /* constants.xlf */; };
+		D1F0A0011F00000000A005FB /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D1F0A0021F00000000A005FB /* libxml2.tbd */; };
+		D1F0A0031F00000000A005FB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D1F0A0041F00000000A005FB /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -166,18 +159,9 @@
 		D14D10DD1A03A8A5008B3411 /* constants.xlf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = constants.xlf; sourceTree = "<group>"; };
 		D175D9CC1A02E8DD0006B569 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D1D143671ED8B0CE00A005FB /* libcairo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcairo.a; path = a/libcairo.a; sourceTree = "<group>"; };
-		D1D143681ED8B0CE00A005FB /* libfontconfig.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfontconfig.a; path = a/libfontconfig.a; sourceTree = "<group>"; };
-		D1D143691ED8B0CE00A005FB /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = a/libfreetype.a; sourceTree = "<group>"; };
-		D1D1436A1ED8B0CE00A005FB /* libiconv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiconv.a; path = a/libiconv.a; sourceTree = "<group>"; };
 		D1D1436B1ED8B0CE00A005FB /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = a/libjpeg.a; sourceTree = "<group>"; };
 		D1D1436C1ED8B0CE00A005FB /* libpixman-1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpixman-1.a"; path = "a/libpixman-1.a"; sourceTree = "<group>"; };
 		D1D1436D1ED8B0CE00A005FB /* libpng16.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng16.a; path = a/libpng16.a; sourceTree = "<group>"; };
-		D1D1436E1ED8B0CE00A005FB /* libxml2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libxml2.a; path = a/libxml2.a; sourceTree = "<group>"; };
-		D1D1436F1ED8B0CE00A005FB /* libz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libz.a; path = a/libz.a; sourceTree = "<group>"; };
-		D1D1437A1ED8B34C00A005FB /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = usr/lib/libbz2.dylib; sourceTree = SDKROOT; };
-		D1D1437C1ED8B38600A005FB /* libharfbuzz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libharfbuzz.a; path = a/libharfbuzz.a; sourceTree = "<group>"; };
-		D1D1437E1ED8B40300A005FB /* libglib-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libglib-2.0.a"; path = "a/libglib-2.0.a"; sourceTree = "<group>"; };
-		D1D143801ED8B41B00A005FB /* libintl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libintl.a; path = a/libintl.a; sourceTree = "<group>"; };
 		D1D143831ED8B49900A005FB /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		D1D143841ED8B49900A005FB /* svg.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = svg.c; sourceTree = "<group>"; };
 		D1D143851ED8B49900A005FB /* svg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = svg.h; sourceTree = "<group>"; };
@@ -210,6 +194,8 @@
 		D1D143A11ED8B49900A005FB /* svg_cairo.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = svg_cairo.c; sourceTree = "<group>"; };
 		D1D143A21ED8B49900A005FB /* svg_cairo_sprintf_alloc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = svg_cairo_sprintf_alloc.c; sourceTree = "<group>"; };
 		D1D143A31ED8B49900A005FB /* svg_cairo_state.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = svg_cairo_state.c; sourceTree = "<group>"; };
+		D1F0A0021F00000000A005FB /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		D1F0A0041F00000000A005FB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,22 +203,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1D1437B1ED8B34C00A005FB /* libbz2.dylib in Frameworks */,
 				D1D143751ED8B0CE00A005FB /* libpixman-1.a in Frameworks */,
 				D13116C71A03B5B600DE1322 /* AppKit.framework in Frameworks */,
-				D1D143731ED8B0CE00A005FB /* libiconv.a in Frameworks */,
-				D1D143771ED8B0CE00A005FB /* libxml2.a in Frameworks */,
 				D175D9CD1A02E8DD0006B569 /* CoreGraphics.framework in Frameworks */,
-				D1D143811ED8B41B00A005FB /* libintl.a in Frameworks */,
-				D1D143711ED8B0CE00A005FB /* libfontconfig.a in Frameworks */,
-				D1D1437F1ED8B40300A005FB /* libglib-2.0.a in Frameworks */,
-				D1D143781ED8B0CE00A005FB /* libz.a in Frameworks */,
 				D1D143701ED8B0CE00A005FB /* libcairo.a in Frameworks */,
-				D1D1437D1ED8B38600A005FB /* libharfbuzz.a in Frameworks */,
 				D1D143761ED8B0CE00A005FB /* libpng16.a in Frameworks */,
 				D1D143741ED8B0CE00A005FB /* libjpeg.a in Frameworks */,
 				D130064F12F02D9700702C0E /* Cocoa.framework in Frameworks */,
-				D1D143721ED8B0CE00A005FB /* libfreetype.a in Frameworks */,
+				D1F0A0011F00000000A005FB /* libxml2.tbd in Frameworks */,
+				D1F0A0031F00000000A005FB /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,18 +353,10 @@
 		D1D143661ED8B0C100A005FB /* a */ = {
 			isa = PBXGroup;
 			children = (
-				D1D1437E1ED8B40300A005FB /* libglib-2.0.a */,
-				D1D143801ED8B41B00A005FB /* libintl.a */,
-				D1D1437C1ED8B38600A005FB /* libharfbuzz.a */,
 				D1D143671ED8B0CE00A005FB /* libcairo.a */,
-				D1D143681ED8B0CE00A005FB /* libfontconfig.a */,
-				D1D143691ED8B0CE00A005FB /* libfreetype.a */,
-				D1D1436A1ED8B0CE00A005FB /* libiconv.a */,
 				D1D1436B1ED8B0CE00A005FB /* libjpeg.a */,
 				D1D1436C1ED8B0CE00A005FB /* libpixman-1.a */,
 				D1D1436D1ED8B0CE00A005FB /* libpng16.a */,
-				D1D1436E1ED8B0CE00A005FB /* libxml2.a */,
-				D1D1436F1ED8B0CE00A005FB /* libz.a */,
 			);
 			name = a;
 			sourceTree = "<group>";
@@ -393,7 +364,8 @@
 		D1D143791ED8B34C00A005FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D1D1437A1ED8B34C00A005FB /* libbz2.dylib */,
+				D1F0A0021F00000000A005FB /* libxml2.tbd */,
+				D1F0A0041F00000000A005FB /* libz.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -646,7 +618,7 @@
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
 				HEADER_SEARCH_PATHS = (
 					include,
-					include/libxml2,
+					"$(SDKROOT)/usr/include/libxml2",
 					include/cairo,
 					include/libpng16,
 				);
@@ -688,7 +660,7 @@
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
 				HEADER_SEARCH_PATHS = (
 					include,
-					include/libxml2,
+					"$(SDKROOT)/usr/include/libxml2",
 					include/cairo,
 					include/libpng16,
 				);
@@ -728,7 +700,7 @@
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
 				HEADER_SEARCH_PATHS = (
 					include,
-					include/libxml2,
+					"$(SDKROOT)/usr/include/libxml2",
 					include/cairo,
 					include/libpng16,
 				);

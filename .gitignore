@@ -4,3 +4,6 @@ build/
 *.4dbase/userPreferences.*/
 SVG Converter Light.4dbase/Plugins/SVG Converter Light.bundle/Contents/MacOS/SVG Converter Light
 SVG Converter Light.4dbase/Plugins/SVG Converter Light.bundle/Contents/_CodeSignature/
+
+# built by scripts/build-macos-deps.sh (cached in CI)
+a/*.a
